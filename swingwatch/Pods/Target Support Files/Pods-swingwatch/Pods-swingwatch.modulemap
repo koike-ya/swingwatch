@@ -1,0 +1,6 @@
+framework module Pods_swingwatch {
+  umbrella header "Pods-swingwatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

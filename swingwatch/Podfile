@@ -1,0 +1,48 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'swingwatch' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for swingwatch
+  # add pods for desired Firebase products
+  # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+
+  target 'swingwatchTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'swingwatchUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'swingwatch WatchKit App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for swingwatch WatchKit App
+
+  target 'swingwatch WatchKit AppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'swingwatch WatchKit AppUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'swingwatch WatchKit Extension' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for swingwatch WatchKit Extension
+
+end

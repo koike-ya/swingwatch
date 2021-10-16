@@ -1,0 +1,1475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AA70479020A17CDE04350A8 /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC778A38BFC263F5C62ED93B /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework */; };
+		662BE50E271AA1F50021F745 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662BE50D271AA1F50021F745 /* Date+Formatter.swift */; };
+		66C27D85271A6BBD007607DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D84271A6BBD007607DC /* AppDelegate.swift */; };
+		66C27D87271A6BBD007607DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D86271A6BBD007607DC /* SceneDelegate.swift */; };
+		66C27D89271A6BBD007607DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D88271A6BBD007607DC /* ViewController.swift */; };
+		66C27D8C271A6BBD007607DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C27D8A271A6BBD007607DC /* Main.storyboard */; };
+		66C27D8E271A6BBF007607DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C27D8D271A6BBF007607DC /* Assets.xcassets */; };
+		66C27D91271A6BBF007607DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C27D8F271A6BBF007607DC /* LaunchScreen.storyboard */; };
+		66C27D9C271A6BBF007607DC /* swingwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D9B271A6BBF007607DC /* swingwatchTests.swift */; };
+		66C27DA7271A6BBF007607DC /* swingwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27DA6271A6BBF007607DC /* swingwatchUITests.swift */; };
+		66C27DAC271A6BBF007607DC /* swingwatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 66C27DAB271A6BBF007607DC /* swingwatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66C27DB2271A6BBF007607DC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DB0271A6BBF007607DC /* Interface.storyboard */; };
+		66C27DB4271A6BC0007607DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DB3271A6BC0007607DC /* Assets.xcassets */; };
+		66C27DBB271A6BC0007607DC /* swingwatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66C27DBA271A6BC0007607DC /* swingwatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66C27DC0271A6BC0007607DC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27DBF271A6BC0007607DC /* InterfaceController.swift */; };
+		66C27DC2271A6BC0007607DC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27DC1271A6BC0007607DC /* ExtensionDelegate.swift */; };
+		66C27DC4271A6BC0007607DC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27DC3271A6BC0007607DC /* NotificationController.swift */; };
+		66C27DC6271A6BC0007607DC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27DC5271A6BC0007607DC /* ComplicationController.swift */; };
+		66C27DC8271A6BC1007607DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DC7271A6BC1007607DC /* Assets.xcassets */; };
+		66C27DD4271A6BC1007607DC /* swingwatch_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27DD3271A6BC1007607DC /* swingwatch_WatchKit_AppTests.swift */; };
+		66C27DDF271A6BC1007607DC /* swingwatch_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27DDE271A6BC1007607DC /* swingwatch_WatchKit_AppUITests.swift */; };
+		66C27DFB271A95F9007607DC /* CloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27DFA271A95F9007607DC /* CloudStorage.swift */; };
+		66C27DFD271A9702007607DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DFC271A9702007607DC /* GoogleService-Info.plist */; };
+		66C27DFE271A9702007607DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DFC271A9702007607DC /* GoogleService-Info.plist */; };
+		66C27DFF271A9702007607DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DFC271A9702007607DC /* GoogleService-Info.plist */; };
+		66C27E00271A9702007607DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DFC271A9702007607DC /* GoogleService-Info.plist */; };
+		66C27E01271A9702007607DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DFC271A9702007607DC /* GoogleService-Info.plist */; };
+		66C27E02271A9702007607DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DFC271A9702007607DC /* GoogleService-Info.plist */; };
+		66C27E03271A9702007607DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C27DFC271A9702007607DC /* GoogleService-Info.plist */; };
+		7A5AA01E0FDF4E4BB836193A /* Pods_swingwatch_WatchKit_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA1A92BB7CB0C8B6E119DF7 /* Pods_swingwatch_WatchKit_AppTests.framework */; };
+		7E63C5AB0C75C9F5FBE21631 /* Pods_swingwatch_swingwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C5F9D6B3E3CD4E90C660FF /* Pods_swingwatch_swingwatchUITests.framework */; };
+		ACF5BC96EE2BB994B32354B6 /* Pods_swingwatch_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5EA28B837D69C05DF6E336 /* Pods_swingwatch_WatchKit_App.framework */; };
+		CED6300EE003252C4805888B /* Pods_swingwatch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44045E2C0BC127132C7D7DA7 /* Pods_swingwatch_WatchKit_Extension.framework */; };
+		F3E43C1A1522C470C2A360A0 /* Pods_swingwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ECFD71C02719608F2E1674 /* Pods_swingwatch.framework */; };
+		F6A2D96F61605F6BD0323A9D /* Pods_swingwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF88C879440C8C0887E3606 /* Pods_swingwatchTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66C27D98271A6BBF007607DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C27D79271A6BBC007607DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C27D80271A6BBD007607DC;
+			remoteInfo = swingwatch;
+		};
+		66C27DA3271A6BBF007607DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C27D79271A6BBC007607DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C27D80271A6BBD007607DC;
+			remoteInfo = swingwatch;
+		};
+		66C27DAD271A6BBF007607DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C27D79271A6BBC007607DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C27DAA271A6BBF007607DC;
+			remoteInfo = "swingwatch WatchKit App";
+		};
+		66C27DBC271A6BC0007607DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C27D79271A6BBC007607DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C27DB9271A6BC0007607DC;
+			remoteInfo = "swingwatch WatchKit Extension";
+		};
+		66C27DD0271A6BC1007607DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C27D79271A6BBC007607DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C27DB9271A6BC0007607DC;
+			remoteInfo = "swingwatch WatchKit Extension";
+		};
+		66C27DDB271A6BC1007607DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C27D79271A6BBC007607DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C27DAA271A6BBF007607DC;
+			remoteInfo = "swingwatch WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66C27DE6271A6BC1007607DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				66C27DBB271A6BC0007607DC /* swingwatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DEA271A6BC1007607DC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				66C27DAC271A6BBF007607DC /* swingwatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13B965139E4DE4436C3418EB /* Pods-swingwatch WatchKit AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit AppTests.release.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit AppTests/Pods-swingwatch WatchKit AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		25ECFD71C02719608F2E1674 /* Pods_swingwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swingwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF88C879440C8C0887E3606 /* Pods_swingwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swingwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35861389B6800EAB7135A35A /* Pods-swingwatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit Extension/Pods-swingwatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		44045E2C0BC127132C7D7DA7 /* Pods_swingwatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swingwatch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5EA28B837D69C05DF6E336 /* Pods_swingwatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swingwatch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F213904723FF8F2BD92B00 /* Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		662BE50D271AA1F50021F745 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		66C27D81271A6BBD007607DC /* swingwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swingwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C27D84271A6BBD007607DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66C27D86271A6BBD007607DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		66C27D88271A6BBD007607DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66C27D8B271A6BBD007607DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66C27D8D271A6BBF007607DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66C27D90271A6BBF007607DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66C27D92271A6BBF007607DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C27D97271A6BBF007607DC /* swingwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swingwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C27D9B271A6BBF007607DC /* swingwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swingwatchTests.swift; sourceTree = "<group>"; };
+		66C27D9D271A6BBF007607DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C27DA2271A6BBF007607DC /* swingwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swingwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C27DA6271A6BBF007607DC /* swingwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swingwatchUITests.swift; sourceTree = "<group>"; };
+		66C27DA8271A6BBF007607DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C27DAB271A6BBF007607DC /* swingwatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swingwatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C27DB1271A6BBF007607DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		66C27DB3271A6BC0007607DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66C27DB5271A6BC0007607DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C27DBA271A6BC0007607DC /* swingwatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "swingwatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C27DBF271A6BC0007607DC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		66C27DC1271A6BC0007607DC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		66C27DC3271A6BC0007607DC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		66C27DC5271A6BC0007607DC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		66C27DC7271A6BC1007607DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66C27DC9271A6BC1007607DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C27DCA271A6BC1007607DC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		66C27DCF271A6BC1007607DC /* swingwatch WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swingwatch WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C27DD3271A6BC1007607DC /* swingwatch_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swingwatch_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		66C27DD5271A6BC1007607DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C27DDA271A6BC1007607DC /* swingwatch WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swingwatch WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C27DDE271A6BC1007607DC /* swingwatch_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swingwatch_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		66C27DE0271A6BC1007607DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C27DFA271A95F9007607DC /* CloudStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorage.swift; sourceTree = "<group>"; };
+		66C27DFC271A9702007607DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69B087B284717FF2F7C88286 /* Pods-swingwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch.release.xcconfig"; path = "Target Support Files/Pods-swingwatch/Pods-swingwatch.release.xcconfig"; sourceTree = "<group>"; };
+		782D43FA860E9D0008275838 /* Pods-swingwatch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit App/Pods-swingwatch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		7D277FA5E11A3FF721A0003F /* Pods-swingwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatchTests.debug.xcconfig"; path = "Target Support Files/Pods-swingwatchTests/Pods-swingwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8FCECF21521F50695094D63 /* Pods-swingwatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit App/Pods-swingwatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B5A0DDCFF85C4DC1EE1182F3 /* Pods-swingwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch.debug.xcconfig"; path = "Target Support Files/Pods-swingwatch/Pods-swingwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		C99A20C207A530938CAE118A /* Pods-swingwatch-swingwatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch-swingwatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-swingwatch-swingwatchUITests/Pods-swingwatch-swingwatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5DA831D02832F5EEF463964 /* Pods-swingwatch WatchKit AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit AppTests.debug.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit AppTests/Pods-swingwatch WatchKit AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1C5F9D6B3E3CD4E90C660FF /* Pods_swingwatch_swingwatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swingwatch_swingwatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40AEE9C24845B3C642A2390 /* Pods-swingwatch-swingwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch-swingwatchUITests.release.xcconfig"; path = "Target Support Files/Pods-swingwatch-swingwatchUITests/Pods-swingwatch-swingwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA7999114757677EE8B8FC12 /* Pods-swingwatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit Extension/Pods-swingwatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		EBA1A92BB7CB0C8B6E119DF7 /* Pods_swingwatch_WatchKit_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swingwatch_WatchKit_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC778A38BFC263F5C62ED93B /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB86892C0BBD05771BC926D /* Pods-swingwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatchTests.release.xcconfig"; path = "Target Support Files/Pods-swingwatchTests/Pods-swingwatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		F762001596CA329C644EFF6B /* Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.release.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1472EC20D16499E7788CA29D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF5BC96EE2BB994B32354B6 /* Pods_swingwatch_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27D7E271A6BBD007607DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E43C1A1522C470C2A360A0 /* Pods_swingwatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27D94271A6BBF007607DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2D96F61605F6BD0323A9D /* Pods_swingwatchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27D9F271A6BBF007607DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E63C5AB0C75C9F5FBE21631 /* Pods_swingwatch_swingwatchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DB7271A6BC0007607DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED6300EE003252C4805888B /* Pods_swingwatch_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DCC271A6BC1007607DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5AA01E0FDF4E4BB836193A /* Pods_swingwatch_WatchKit_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DD7271A6BC1007607DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA70479020A17CDE04350A8 /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		662BE50C271AA1E20021F745 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				662BE50D271AA1F50021F745 /* Date+Formatter.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		66C27D78271A6BBC007607DC = {
+			isa = PBXGroup;
+			children = (
+				662BE50C271AA1E20021F745 /* Extension */,
+				66C27DFC271A9702007607DC /* GoogleService-Info.plist */,
+				66C27D83271A6BBD007607DC /* swingwatch */,
+				66C27D9A271A6BBF007607DC /* swingwatchTests */,
+				66C27DA5271A6BBF007607DC /* swingwatchUITests */,
+				66C27DAF271A6BBF007607DC /* swingwatch WatchKit App */,
+				66C27DBE271A6BC0007607DC /* swingwatch WatchKit Extension */,
+				66C27DD2271A6BC1007607DC /* swingwatch WatchKit AppTests */,
+				66C27DDD271A6BC1007607DC /* swingwatch WatchKit AppUITests */,
+				66C27D82271A6BBD007607DC /* Products */,
+				B1BF1BA6C42AAD25A8D095B5 /* Pods */,
+				AC4E60966F83264BDE01CA32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66C27D82271A6BBD007607DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66C27D81271A6BBD007607DC /* swingwatch.app */,
+				66C27D97271A6BBF007607DC /* swingwatchTests.xctest */,
+				66C27DA2271A6BBF007607DC /* swingwatchUITests.xctest */,
+				66C27DAB271A6BBF007607DC /* swingwatch WatchKit App.app */,
+				66C27DBA271A6BC0007607DC /* swingwatch WatchKit Extension.appex */,
+				66C27DCF271A6BC1007607DC /* swingwatch WatchKit AppTests.xctest */,
+				66C27DDA271A6BC1007607DC /* swingwatch WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66C27D83271A6BBD007607DC /* swingwatch */ = {
+			isa = PBXGroup;
+			children = (
+				66C27D84271A6BBD007607DC /* AppDelegate.swift */,
+				66C27D86271A6BBD007607DC /* SceneDelegate.swift */,
+				66C27D88271A6BBD007607DC /* ViewController.swift */,
+				66C27D8A271A6BBD007607DC /* Main.storyboard */,
+				66C27D8D271A6BBF007607DC /* Assets.xcassets */,
+				66C27D8F271A6BBF007607DC /* LaunchScreen.storyboard */,
+				66C27D92271A6BBF007607DC /* Info.plist */,
+				66C27DFA271A95F9007607DC /* CloudStorage.swift */,
+			);
+			path = swingwatch;
+			sourceTree = "<group>";
+		};
+		66C27D9A271A6BBF007607DC /* swingwatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				66C27D9B271A6BBF007607DC /* swingwatchTests.swift */,
+				66C27D9D271A6BBF007607DC /* Info.plist */,
+			);
+			path = swingwatchTests;
+			sourceTree = "<group>";
+		};
+		66C27DA5271A6BBF007607DC /* swingwatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66C27DA6271A6BBF007607DC /* swingwatchUITests.swift */,
+				66C27DA8271A6BBF007607DC /* Info.plist */,
+			);
+			path = swingwatchUITests;
+			sourceTree = "<group>";
+		};
+		66C27DAF271A6BBF007607DC /* swingwatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				66C27DB0271A6BBF007607DC /* Interface.storyboard */,
+				66C27DB3271A6BC0007607DC /* Assets.xcassets */,
+				66C27DB5271A6BC0007607DC /* Info.plist */,
+			);
+			path = "swingwatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		66C27DBE271A6BC0007607DC /* swingwatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				66C27DBF271A6BC0007607DC /* InterfaceController.swift */,
+				66C27DC1271A6BC0007607DC /* ExtensionDelegate.swift */,
+				66C27DC3271A6BC0007607DC /* NotificationController.swift */,
+				66C27DC5271A6BC0007607DC /* ComplicationController.swift */,
+				66C27DC7271A6BC1007607DC /* Assets.xcassets */,
+				66C27DC9271A6BC1007607DC /* Info.plist */,
+				66C27DCA271A6BC1007607DC /* PushNotificationPayload.apns */,
+			);
+			path = "swingwatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		66C27DD2271A6BC1007607DC /* swingwatch WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				66C27DD3271A6BC1007607DC /* swingwatch_WatchKit_AppTests.swift */,
+				66C27DD5271A6BC1007607DC /* Info.plist */,
+			);
+			path = "swingwatch WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		66C27DDD271A6BC1007607DC /* swingwatch WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66C27DDE271A6BC1007607DC /* swingwatch_WatchKit_AppUITests.swift */,
+				66C27DE0271A6BC1007607DC /* Info.plist */,
+			);
+			path = "swingwatch WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+		AC4E60966F83264BDE01CA32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25ECFD71C02719608F2E1674 /* Pods_swingwatch.framework */,
+				4C5EA28B837D69C05DF6E336 /* Pods_swingwatch_WatchKit_App.framework */,
+				EC778A38BFC263F5C62ED93B /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework */,
+				EBA1A92BB7CB0C8B6E119DF7 /* Pods_swingwatch_WatchKit_AppTests.framework */,
+				44045E2C0BC127132C7D7DA7 /* Pods_swingwatch_WatchKit_Extension.framework */,
+				E1C5F9D6B3E3CD4E90C660FF /* Pods_swingwatch_swingwatchUITests.framework */,
+				2FF88C879440C8C0887E3606 /* Pods_swingwatchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1BF1BA6C42AAD25A8D095B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0DDCFF85C4DC1EE1182F3 /* Pods-swingwatch.debug.xcconfig */,
+				69B087B284717FF2F7C88286 /* Pods-swingwatch.release.xcconfig */,
+				782D43FA860E9D0008275838 /* Pods-swingwatch WatchKit App.debug.xcconfig */,
+				A8FCECF21521F50695094D63 /* Pods-swingwatch WatchKit App.release.xcconfig */,
+				65F213904723FF8F2BD92B00 /* Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig */,
+				F762001596CA329C644EFF6B /* Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.release.xcconfig */,
+				D5DA831D02832F5EEF463964 /* Pods-swingwatch WatchKit AppTests.debug.xcconfig */,
+				13B965139E4DE4436C3418EB /* Pods-swingwatch WatchKit AppTests.release.xcconfig */,
+				EA7999114757677EE8B8FC12 /* Pods-swingwatch WatchKit Extension.debug.xcconfig */,
+				35861389B6800EAB7135A35A /* Pods-swingwatch WatchKit Extension.release.xcconfig */,
+				C99A20C207A530938CAE118A /* Pods-swingwatch-swingwatchUITests.debug.xcconfig */,
+				E40AEE9C24845B3C642A2390 /* Pods-swingwatch-swingwatchUITests.release.xcconfig */,
+				7D277FA5E11A3FF721A0003F /* Pods-swingwatchTests.debug.xcconfig */,
+				ECB86892C0BBD05771BC926D /* Pods-swingwatchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66C27D80271A6BBD007607DC /* swingwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C27DEB271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch" */;
+			buildPhases = (
+				ECD2E74284E9C5B4D05594E4 /* [CP] Check Pods Manifest.lock */,
+				66C27D7D271A6BBD007607DC /* Sources */,
+				66C27D7E271A6BBD007607DC /* Frameworks */,
+				66C27D7F271A6BBD007607DC /* Resources */,
+				66C27DEA271A6BC1007607DC /* Embed Watch Content */,
+				8333DF32B6BF2BE2D0C29A34 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C27DAE271A6BBF007607DC /* PBXTargetDependency */,
+			);
+			name = swingwatch;
+			productName = swingwatch;
+			productReference = 66C27D81271A6BBD007607DC /* swingwatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66C27D96271A6BBF007607DC /* swingwatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C27DEE271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatchTests" */;
+			buildPhases = (
+				48367022A3F5F46D6258573C /* [CP] Check Pods Manifest.lock */,
+				66C27D93271A6BBF007607DC /* Sources */,
+				66C27D94271A6BBF007607DC /* Frameworks */,
+				66C27D95271A6BBF007607DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C27D99271A6BBF007607DC /* PBXTargetDependency */,
+			);
+			name = swingwatchTests;
+			productName = swingwatchTests;
+			productReference = 66C27D97271A6BBF007607DC /* swingwatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66C27DA1271A6BBF007607DC /* swingwatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C27DF1271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatchUITests" */;
+			buildPhases = (
+				FDBDF3744FFDDD83769595FC /* [CP] Check Pods Manifest.lock */,
+				66C27D9E271A6BBF007607DC /* Sources */,
+				66C27D9F271A6BBF007607DC /* Frameworks */,
+				66C27DA0271A6BBF007607DC /* Resources */,
+				75F691771C5B5A2052A864EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C27DA4271A6BBF007607DC /* PBXTargetDependency */,
+			);
+			name = swingwatchUITests;
+			productName = swingwatchUITests;
+			productReference = 66C27DA2271A6BBF007607DC /* swingwatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		66C27DAA271A6BBF007607DC /* swingwatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C27DE7271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch WatchKit App" */;
+			buildPhases = (
+				F7944D2B75846B913F03C5AB /* [CP] Check Pods Manifest.lock */,
+				66C27DA9271A6BBF007607DC /* Resources */,
+				66C27DE6271A6BC1007607DC /* Embed App Extensions */,
+				1472EC20D16499E7788CA29D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C27DBD271A6BC0007607DC /* PBXTargetDependency */,
+			);
+			name = "swingwatch WatchKit App";
+			productName = "swingwatch WatchKit App";
+			productReference = 66C27DAB271A6BBF007607DC /* swingwatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		66C27DB9271A6BC0007607DC /* swingwatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C27DE3271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch WatchKit Extension" */;
+			buildPhases = (
+				7AEE88F0DFD7174F72FCE2FD /* [CP] Check Pods Manifest.lock */,
+				66C27DB6271A6BC0007607DC /* Sources */,
+				66C27DB7271A6BC0007607DC /* Frameworks */,
+				66C27DB8271A6BC0007607DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swingwatch WatchKit Extension";
+			productName = "swingwatch WatchKit Extension";
+			productReference = 66C27DBA271A6BC0007607DC /* swingwatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		66C27DCE271A6BC1007607DC /* swingwatch WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C27DF4271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch WatchKit AppTests" */;
+			buildPhases = (
+				053751AD6A4FABB2AA86B8CA /* [CP] Check Pods Manifest.lock */,
+				66C27DCB271A6BC1007607DC /* Sources */,
+				66C27DCC271A6BC1007607DC /* Frameworks */,
+				66C27DCD271A6BC1007607DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C27DD1271A6BC1007607DC /* PBXTargetDependency */,
+			);
+			name = "swingwatch WatchKit AppTests";
+			productName = "swingwatch WatchKit AppTests";
+			productReference = 66C27DCF271A6BC1007607DC /* swingwatch WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66C27DD9271A6BC1007607DC /* swingwatch WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C27DF7271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch WatchKit AppUITests" */;
+			buildPhases = (
+				71592097DD9CE407719DC87E /* [CP] Check Pods Manifest.lock */,
+				66C27DD6271A6BC1007607DC /* Sources */,
+				66C27DD7271A6BC1007607DC /* Frameworks */,
+				66C27DD8271A6BC1007607DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C27DDC271A6BC1007607DC /* PBXTargetDependency */,
+			);
+			name = "swingwatch WatchKit AppUITests";
+			productName = "swingwatch WatchKit AppUITests";
+			productReference = 66C27DDA271A6BC1007607DC /* swingwatch WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66C27D79271A6BBC007607DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					66C27D80271A6BBD007607DC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					66C27D96271A6BBF007607DC = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 66C27D80271A6BBD007607DC;
+					};
+					66C27DA1271A6BBF007607DC = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 66C27D80271A6BBD007607DC;
+					};
+					66C27DAA271A6BBF007607DC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					66C27DB9271A6BC0007607DC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					66C27DCE271A6BC1007607DC = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 66C27DB9271A6BC0007607DC;
+					};
+					66C27DD9271A6BC1007607DC = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 66C27DAA271A6BBF007607DC;
+					};
+				};
+			};
+			buildConfigurationList = 66C27D7C271A6BBC007607DC /* Build configuration list for PBXProject "swingwatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66C27D78271A6BBC007607DC;
+			productRefGroup = 66C27D82271A6BBD007607DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66C27D80271A6BBD007607DC /* swingwatch */,
+				66C27D96271A6BBF007607DC /* swingwatchTests */,
+				66C27DA1271A6BBF007607DC /* swingwatchUITests */,
+				66C27DAA271A6BBF007607DC /* swingwatch WatchKit App */,
+				66C27DB9271A6BC0007607DC /* swingwatch WatchKit Extension */,
+				66C27DCE271A6BC1007607DC /* swingwatch WatchKit AppTests */,
+				66C27DD9271A6BC1007607DC /* swingwatch WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66C27D7F271A6BBD007607DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27D91271A6BBF007607DC /* LaunchScreen.storyboard in Resources */,
+				66C27DFD271A9702007607DC /* GoogleService-Info.plist in Resources */,
+				66C27D8E271A6BBF007607DC /* Assets.xcassets in Resources */,
+				66C27D8C271A6BBD007607DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27D95271A6BBF007607DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27DFE271A9702007607DC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DA0271A6BBF007607DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27DFF271A9702007607DC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DA9271A6BBF007607DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27DB4271A6BC0007607DC /* Assets.xcassets in Resources */,
+				66C27DB2271A6BBF007607DC /* Interface.storyboard in Resources */,
+				66C27E00271A9702007607DC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DB8271A6BC0007607DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27DC8271A6BC1007607DC /* Assets.xcassets in Resources */,
+				66C27E01271A9702007607DC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DCD271A6BC1007607DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27E02271A9702007607DC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DD8271A6BC1007607DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27E03271A9702007607DC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		053751AD6A4FABB2AA86B8CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swingwatch WatchKit AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48367022A3F5F46D6258573C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swingwatchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71592097DD9CE407719DC87E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75F691771C5B5A2052A864EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swingwatch-swingwatchUITests/Pods-swingwatch-swingwatchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swingwatch-swingwatchUITests/Pods-swingwatch-swingwatchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swingwatch-swingwatchUITests/Pods-swingwatch-swingwatchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AEE88F0DFD7174F72FCE2FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swingwatch WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8333DF32B6BF2BE2D0C29A34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swingwatch/Pods-swingwatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swingwatch/Pods-swingwatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swingwatch/Pods-swingwatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD2E74284E9C5B4D05594E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swingwatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7944D2B75846B913F03C5AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swingwatch WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDBDF3744FFDDD83769595FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swingwatch-swingwatchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66C27D7D271A6BBD007607DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662BE50E271AA1F50021F745 /* Date+Formatter.swift in Sources */,
+				66C27D89271A6BBD007607DC /* ViewController.swift in Sources */,
+				66C27DFB271A95F9007607DC /* CloudStorage.swift in Sources */,
+				66C27D85271A6BBD007607DC /* AppDelegate.swift in Sources */,
+				66C27D87271A6BBD007607DC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27D93271A6BBF007607DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27D9C271A6BBF007607DC /* swingwatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27D9E271A6BBF007607DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27DA7271A6BBF007607DC /* swingwatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DB6271A6BC0007607DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27DC4271A6BC0007607DC /* NotificationController.swift in Sources */,
+				66C27DC6271A6BC0007607DC /* ComplicationController.swift in Sources */,
+				66C27DC2271A6BC0007607DC /* ExtensionDelegate.swift in Sources */,
+				66C27DC0271A6BC0007607DC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DCB271A6BC1007607DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27DD4271A6BC1007607DC /* swingwatch_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C27DD6271A6BC1007607DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C27DDF271A6BC1007607DC /* swingwatch_WatchKit_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66C27D99271A6BBF007607DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C27D80271A6BBD007607DC /* swingwatch */;
+			targetProxy = 66C27D98271A6BBF007607DC /* PBXContainerItemProxy */;
+		};
+		66C27DA4271A6BBF007607DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C27D80271A6BBD007607DC /* swingwatch */;
+			targetProxy = 66C27DA3271A6BBF007607DC /* PBXContainerItemProxy */;
+		};
+		66C27DAE271A6BBF007607DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C27DAA271A6BBF007607DC /* swingwatch WatchKit App */;
+			targetProxy = 66C27DAD271A6BBF007607DC /* PBXContainerItemProxy */;
+		};
+		66C27DBD271A6BC0007607DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C27DB9271A6BC0007607DC /* swingwatch WatchKit Extension */;
+			targetProxy = 66C27DBC271A6BC0007607DC /* PBXContainerItemProxy */;
+		};
+		66C27DD1271A6BC1007607DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C27DB9271A6BC0007607DC /* swingwatch WatchKit Extension */;
+			targetProxy = 66C27DD0271A6BC1007607DC /* PBXContainerItemProxy */;
+		};
+		66C27DDC271A6BC1007607DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C27DAA271A6BBF007607DC /* swingwatch WatchKit App */;
+			targetProxy = 66C27DDB271A6BC1007607DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66C27D8A271A6BBD007607DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C27D8B271A6BBD007607DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66C27D8F271A6BBF007607DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C27D90271A6BBF007607DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		66C27DB0271A6BBF007607DC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C27DB1271A6BBF007607DC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66C27DE1271A6BC1007607DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66C27DE2271A6BC1007607DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		66C27DE4271A6BC1007607DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7999114757677EE8B8FC12 /* Pods-swingwatch WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = "swingwatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		66C27DE5271A6BC1007607DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35861389B6800EAB7135A35A /* Pods-swingwatch WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = "swingwatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		66C27DE8271A6BC1007607DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782D43FA860E9D0008275838 /* Pods-swingwatch WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				IBSC_MODULE = swingwatch_WatchKit_Extension;
+				INFOPLIST_FILE = "swingwatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		66C27DE9271A6BC1007607DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8FCECF21521F50695094D63 /* Pods-swingwatch WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				IBSC_MODULE = swingwatch_WatchKit_Extension;
+				INFOPLIST_FILE = "swingwatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		66C27DEC271A6BC1007607DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A0DDCFF85C4DC1EE1182F3 /* Pods-swingwatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = swingwatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66C27DED271A6BC1007607DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B087B284717FF2F7C88286 /* Pods-swingwatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = swingwatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66C27DEF271A6BC1007607DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D277FA5E11A3FF721A0003F /* Pods-swingwatchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = swingwatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swingwatch.app/swingwatch";
+			};
+			name = Debug;
+		};
+		66C27DF0271A6BC1007607DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB86892C0BBD05771BC926D /* Pods-swingwatchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = swingwatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swingwatch.app/swingwatch";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66C27DF2271A6BC1007607DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99A20C207A530938CAE118A /* Pods-swingwatch-swingwatchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = swingwatchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = swingwatch;
+			};
+			name = Debug;
+		};
+		66C27DF3271A6BC1007607DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40AEE9C24845B3C642A2390 /* Pods-swingwatch-swingwatchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = swingwatchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = besteffort.swingwatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = swingwatch;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66C27DF5271A6BC1007607DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DA831D02832F5EEF463964 /* Pods-swingwatch WatchKit AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = "swingwatch WatchKit AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "besteffort.swingwatch-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swingwatch WatchKit Extension.appex/swingwatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		66C27DF6271A6BC1007607DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B965139E4DE4436C3418EB /* Pods-swingwatch WatchKit AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = "swingwatch WatchKit AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "besteffort.swingwatch-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swingwatch WatchKit Extension.appex/swingwatch WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		66C27DF8271A6BC1007607DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F213904723FF8F2BD92B00 /* Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = "swingwatch WatchKit AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "besteffort.swingwatch-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "swingwatch WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		66C27DF9271A6BC1007607DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F762001596CA329C644EFF6B /* Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SA9MD79GJJ;
+				INFOPLIST_FILE = "swingwatch WatchKit AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "besteffort.swingwatch-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "swingwatch WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66C27D7C271A6BBC007607DC /* Build configuration list for PBXProject "swingwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C27DE1271A6BC1007607DC /* Debug */,
+				66C27DE2271A6BC1007607DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C27DE3271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C27DE4271A6BC1007607DC /* Debug */,
+				66C27DE5271A6BC1007607DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C27DE7271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C27DE8271A6BC1007607DC /* Debug */,
+				66C27DE9271A6BC1007607DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C27DEB271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C27DEC271A6BC1007607DC /* Debug */,
+				66C27DED271A6BC1007607DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C27DEE271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C27DEF271A6BC1007607DC /* Debug */,
+				66C27DF0271A6BC1007607DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C27DF1271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C27DF2271A6BC1007607DC /* Debug */,
+				66C27DF3271A6BC1007607DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C27DF4271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C27DF5271A6BC1007607DC /* Debug */,
+				66C27DF6271A6BC1007607DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C27DF7271A6BC1007607DC /* Build configuration list for PBXNativeTarget "swingwatch WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C27DF8271A6BC1007607DC /* Debug */,
+				66C27DF9271A6BC1007607DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66C27D79271A6BBC007607DC /* Project object */;
+}
