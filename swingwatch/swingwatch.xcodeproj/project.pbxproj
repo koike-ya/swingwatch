@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3AA70479020A17CDE04350A8 /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC778A38BFC263F5C62ED93B /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework */; };
 		662BE50E271AA1F50021F745 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662BE50D271AA1F50021F745 /* Date+Formatter.swift */; };
+		668501C4271AB5CE00E7C33E /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668501C3271AB5CE00E7C33E /* WatchConnector.swift */; };
 		66C27D85271A6BBD007607DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D84271A6BBD007607DC /* AppDelegate.swift */; };
 		66C27D87271A6BBD007607DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D86271A6BBD007607DC /* SceneDelegate.swift */; };
 		66C27D89271A6BBD007607DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D88271A6BBD007607DC /* ViewController.swift */; };
@@ -123,6 +124,7 @@
 		4C5EA28B837D69C05DF6E336 /* Pods_swingwatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swingwatch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F213904723FF8F2BD92B00 /* Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		662BE50D271AA1F50021F745 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		668501C3271AB5CE00E7C33E /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
 		66C27D81271A6BBD007607DC /* swingwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swingwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C27D84271A6BBD007607DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66C27D86271A6BBD007607DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				66C27D8F271A6BBF007607DC /* LaunchScreen.storyboard */,
 				66C27D92271A6BBF007607DC /* Info.plist */,
 				66C27DFA271A95F9007607DC /* CloudStorage.swift */,
+				668501C3271AB5CE00E7C33E /* WatchConnector.swift */,
 			);
 			path = swingwatch;
 			sourceTree = "<group>";
@@ -843,6 +846,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				662BE50E271AA1F50021F745 /* Date+Formatter.swift in Sources */,
+				668501C4271AB5CE00E7C33E /* WatchConnector.swift in Sources */,
 				66C27D89271A6BBD007607DC /* ViewController.swift in Sources */,
 				66C27DFB271A95F9007607DC /* CloudStorage.swift in Sources */,
 				66C27D85271A6BBD007607DC /* AppDelegate.swift in Sources */,

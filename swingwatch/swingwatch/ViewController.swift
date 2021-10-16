@@ -8,8 +8,11 @@
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class ViewController: UIViewController {
+    
+    private var watchConnector: WatchConnector?
 
+    @IBOutlet weak var watchMessageLabel: UILabel!
     @IBOutlet weak var errorLabel: UILabel!
     
     @IBAction func startCamera(_ sender: Any) {
@@ -25,13 +28,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         } else {
             print("SourceType.camera is not available.")
         }
-    }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        picker.dismiss(animated: true, completion: nil)
-        
-        guard let fileUrl = info[.mediaURL] else { return }
-        uploadToGCS(fileUrl as! URL)
     }
     
     func uploadToGCS(_ fileUrl: URL) {
@@ -50,6 +46,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.text = ""
+        watchConnector = WatchConnector(self)
         Auth.auth().signInAnonymously { authResult, error in
             if let error = error {
                 print("error", error)
@@ -59,3 +56,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     }
 }
 
+extension ViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        guard let fileUrl = info[.mediaURL] else { return }
+        uploadToGCS(fileUrl as! URL)
+    }
+}
+
+extension ViewController: WatchConnectorDelegate {
+    
+    func didReceiveMessage(message: String) {
+        DispatchQueue.main.async {
+            self.watchMessageLabel.text = message
+        }
+    }
+}

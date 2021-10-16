@@ -32,19 +32,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No message from watch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVP-b2-0MW">
+                                <rect key="frame" x="0.0" y="164" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZPr-qM-hh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MBO-Ez-mhZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZPr-qM-hh9" secondAttribute="bottom" constant="20" id="Maa-uO-X3x"/>
+                            <constraint firstItem="lVP-b2-0MW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="OmO-Rp-x2a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZPr-qM-hh9" secondAttribute="trailing" id="UuT-Za-pCg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gbc-mX-dAh" secondAttribute="bottom" constant="300" id="aOb-GQ-ggF"/>
+                            <constraint firstItem="lVP-b2-0MW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cmX-N5-SNB"/>
                             <constraint firstItem="gbc-mX-dAh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mSv-3q-ERQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lVP-b2-0MW" secondAttribute="trailing" id="yii-js-GaM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="errorLabel" destination="ZPr-qM-hh9" id="41D-r1-Kkn"/>
+                        <outlet property="watchMessageLabel" destination="lVP-b2-0MW" id="jh2-jQ-fEh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

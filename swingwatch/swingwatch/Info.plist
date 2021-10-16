@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>スイングの動画撮影のためにカメラを使用します。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>スイングの動画撮影のためにマイクを使用します。</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -62,9 +66,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>スイングの動画撮影のためにカメラを使用します。</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>スイングの動画撮影のためにマイクを使用します。</string>
 </dict>
 </plist>
