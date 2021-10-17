@@ -10,6 +10,7 @@ import WatchConnectivity
 
 protocol WatchConnectorDelegate {
     func didReceiveMessage(message: String)
+    func didReceiveFile(url: URL)
 }
 
 class WatchConnector: NSObject, WCSessionDelegate {
@@ -54,5 +55,12 @@ class WatchConnector: NSObject, WCSessionDelegate {
     
     func sessionDidDeactivate(_ session: WCSession) {
         print(#function)
+    }
+    
+    func session(_ session: WCSession, didReceive file: WCSessionFile) {
+        let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let dest = url.appendingPathComponent(file.fileURL.lastPathComponent)
+        try! FileManager.default.copyItem(at: file.fileURL, to:dest)
+        delegate?.didReceiveFile(url: dest)
     }
 }

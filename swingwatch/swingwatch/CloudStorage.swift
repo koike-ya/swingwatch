@@ -22,4 +22,31 @@ enum CloudStorage {
     static func videoFolderRef() -> StorageReference {
         return CloudStorage.storageRef().child("video")
     }
+    
+    static func motionFolderRef() -> StorageReference {
+        return CloudStorage.storageRef().child("motion")
+    }
+    
+    static func uploadToGCS(_ ref: StorageReference, fileUrl: URL, callback: @escaping (_ error: String?) -> Void) {
+        ref.putFile(from: fileUrl, metadata: nil) { metadata, error in
+            if let error = error {
+                callback(error.localizedDescription)
+            } else {
+                print(metadata)
+                callback(nil)
+            }
+        }
+    }
+    
+    static func uploadVideoToGCS(_ fileUrl: URL, callback: @escaping (_ error: String?) -> Void) {
+        let fileName = Date().toYYYYMMddHHmmssNoDelimiterString() + ".MOV"
+        let ref = CloudStorage.videoFolderRef().child(fileName)
+        CloudStorage.uploadToGCS(ref, fileUrl: fileUrl, callback: callback)
+    }
+    
+    static func uploadMotionToGCS(_ fileUrl: URL, callback: @escaping (_ error: String?) -> Void) {
+        let fileName = Date().toYYYYMMddHHmmssNoDelimiterString() + ".csv"
+        let ref = CloudStorage.motionFolderRef().child(fileName)
+        CloudStorage.uploadToGCS(ref, fileUrl: fileUrl, callback: callback)
+    }
 }

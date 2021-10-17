@@ -10,6 +10,10 @@
 		3AA70479020A17CDE04350A8 /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC778A38BFC263F5C62ED93B /* Pods_swingwatch_WatchKit_App_swingwatch_WatchKit_AppUITests.framework */; };
 		662BE50E271AA1F50021F745 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662BE50D271AA1F50021F745 /* Date+Formatter.swift */; };
 		668501C4271AB5CE00E7C33E /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668501C3271AB5CE00E7C33E /* WatchConnector.swift */; };
+		668501C6271BEAB400E7C33E /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668501C5271BEAB400E7C33E /* MotionManager.swift */; };
+		668501C9271BECCD00E7C33E /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668501C8271BECCD00E7C33E /* Date+Formatter.swift */; };
+		668501CC271BEF3C00E7C33E /* DeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668501CB271BEF3C00E7C33E /* DeviceMotion.swift */; };
+		668501CE271BFABA00E7C33E /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668501CD271BFABA00E7C33E /* CSVWriter.swift */; };
 		66C27D85271A6BBD007607DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D84271A6BBD007607DC /* AppDelegate.swift */; };
 		66C27D87271A6BBD007607DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D86271A6BBD007607DC /* SceneDelegate.swift */; };
 		66C27D89271A6BBD007607DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C27D88271A6BBD007607DC /* ViewController.swift */; };
@@ -125,6 +129,10 @@
 		65F213904723FF8F2BD92B00 /* Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests/Pods-swingwatch WatchKit App-swingwatch WatchKit AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		662BE50D271AA1F50021F745 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		668501C3271AB5CE00E7C33E /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		668501C5271BEAB400E7C33E /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		668501C8271BECCD00E7C33E /* Date+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		668501CB271BEF3C00E7C33E /* DeviceMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotion.swift; sourceTree = "<group>"; };
+		668501CD271BFABA00E7C33E /* CSVWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVWriter.swift; sourceTree = "<group>"; };
 		66C27D81271A6BBD007607DC /* swingwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swingwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C27D84271A6BBD007607DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66C27D86271A6BBD007607DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -243,9 +251,26 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		668501C7271BECCD00E7C33E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				668501C8271BECCD00E7C33E /* Date+Formatter.swift */,
+			);
+			path = Extension;
+			sourceTree = SOURCE_ROOT;
+		};
+		668501CA271BEF1600E7C33E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				668501CB271BEF3C00E7C33E /* DeviceMotion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		66C27D78271A6BBC007607DC = {
 			isa = PBXGroup;
 			children = (
+				668501CA271BEF1600E7C33E /* Model */,
 				662BE50C271AA1E20021F745 /* Extension */,
 				66C27DFC271A9702007607DC /* GoogleService-Info.plist */,
 				66C27D83271A6BBD007607DC /* swingwatch */,
@@ -322,6 +347,7 @@
 		66C27DBE271A6BC0007607DC /* swingwatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				668501C7271BECCD00E7C33E /* Extension */,
 				66C27DBF271A6BC0007607DC /* InterfaceController.swift */,
 				66C27DC1271A6BC0007607DC /* ExtensionDelegate.swift */,
 				66C27DC3271A6BC0007607DC /* NotificationController.swift */,
@@ -329,6 +355,8 @@
 				66C27DC7271A6BC1007607DC /* Assets.xcassets */,
 				66C27DC9271A6BC1007607DC /* Info.plist */,
 				66C27DCA271A6BC1007607DC /* PushNotificationPayload.apns */,
+				668501C5271BEAB400E7C33E /* MotionManager.swift */,
+				668501CD271BFABA00E7C33E /* CSVWriter.swift */,
 			);
 			path = "swingwatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -875,8 +903,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C27DC4271A6BC0007607DC /* NotificationController.swift in Sources */,
+				668501CC271BEF3C00E7C33E /* DeviceMotion.swift in Sources */,
+				668501C6271BEAB400E7C33E /* MotionManager.swift in Sources */,
+				668501CE271BFABA00E7C33E /* CSVWriter.swift in Sources */,
 				66C27DC6271A6BC0007607DC /* ComplicationController.swift in Sources */,
 				66C27DC2271A6BC0007607DC /* ExtensionDelegate.swift in Sources */,
+				668501C9271BECCD00E7C33E /* Date+Formatter.swift in Sources */,
 				66C27DC0271A6BC0007607DC /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

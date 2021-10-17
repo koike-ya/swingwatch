@@ -10,8 +10,28 @@ import Foundation
 import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
+    var motionManager: MotionManager?
+    var writer: CSVWriter?
     
-    override func awake(withContext context: Any?) {
+    @IBOutlet weak var changeMeasurementButton: WKInterfaceButton!
+    
+    @IBAction func didTapChangeMeasurementButton() {
+        guard let motionManager = self.motionManager else { return }
+        if motionManager.isDuringMeasurement() {
+            self.stopMeasurement()
+            DispatchQueue.main.async {
+                self.changeMeasurementButton.setTitle("Start")
+            }
+        } else {
+            self.startMeasurement()
+            DispatchQueue.main.async {
+                self.changeMeasurementButton.setTitle("Stop")
+            }
+        }
+    }
+    
+    override init() {
+        super.init()
         if WCSession.isSupported() {
             let session = WCSession.default
             session.delegate = self
@@ -19,6 +39,12 @@ class InterfaceController: WKInterfaceController {
         } else {
             print("WCSession not supported")
         }
+        
+        writer = CSVWriter()
+        motionManager = MotionManager(delegate: self)
+    }
+    
+    override func awake(withContext context: Any?) {
     }
     
     override func willActivate() {
@@ -29,6 +55,21 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         sendMessage("didDeactivate")
         print(#function)
+    }
+    
+    func startMeasurement() {
+        let fileName = CSVWriter.makeFilePath(Date().toYYYYMMddHHmmssNoDelimiterString())
+        let header = DeviceMotion.getFieldNames().joined(separator: ",")
+        writer?.open(fileName, header: header)
+        motionManager?.start()
+        sendMessage("measurement started")
+    }
+    
+    func stopMeasurement() {
+        motionManager?.stop()
+        guard let url = writer?.close() else { return }
+        self.sendFile(url)
+        sendMessage("measurement stopped")
     }
 }
 
@@ -46,5 +87,17 @@ extension InterfaceController: WCSessionDelegate {
                 print("error", error.localizedDescription)
             }
         }
+    }
+    
+    func sendFile(_ url: URL) {
+        WCSession.default.transferFile(url, metadata: nil)
+    }
+}
+
+extension InterfaceController: MotionManagerDelegate {
+    func didReceivedMotionData(_ motion: DeviceMotion) {}
+    
+    func didStop(_ motions: [DeviceMotion]) {
+        writer?.write(motions.map { $0.toString() })
     }
 }

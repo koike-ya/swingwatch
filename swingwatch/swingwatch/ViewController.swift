@@ -29,20 +29,7 @@ class ViewController: UIViewController {
             print("SourceType.camera is not available.")
         }
     }
-    
-    func uploadToGCS(_ fileUrl: URL) {
-        print("fileUrl", fileUrl)
-        let storageRef = CloudStorage.storageRef()
-        let fileName = Date().toYYYYMMddHHmmssNoDelimiterString()
-        let _ = storageRef.child("\(fileName).MOV").putFile(from: fileUrl, metadata: nil) { metadata, error in
-            if let error = error {
-                self.errorLabel.text = error.localizedDescription
-            } else {
-                print(metadata)
-            }
-        }
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.text = ""
@@ -61,7 +48,11 @@ extension ViewController: UIImagePickerControllerDelegate & UINavigationControll
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
         guard let fileUrl = info[.mediaURL] else { return }
-        uploadToGCS(fileUrl as! URL)
+        CloudStorage.uploadVideoToGCS(fileUrl as! URL) { error in
+            if let error = error {
+                self.errorLabel.text = error
+            }
+        }
     }
 }
 
@@ -70,6 +61,14 @@ extension ViewController: WatchConnectorDelegate {
     func didReceiveMessage(message: String) {
         DispatchQueue.main.async {
             self.watchMessageLabel.text = message
+        }
+    }
+    
+    func didReceiveFile(url: URL) {
+        CloudStorage.uploadMotionToGCS(url) { error in
+            if let error = error {
+                self.errorLabel.text = error
+            }
         }
     }
 }
